@@ -6,9 +6,10 @@
 # https://github.com/dockerfile/java/tree/master/oracle-java8
 #
 
-FROM armv7/armhf-ubuntu:14.04.2
+FROM armv7/armhf-ubuntu:14.04.3
 
 # Install Java.
+RUN apt-get -y update
 RUN apt-get -y update
 RUN apt-get -y install software-properties-common
 
